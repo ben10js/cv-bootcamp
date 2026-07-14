@@ -1,0 +1,17 @@
+# Python Bytecode and Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments and Logs
+.env
+.venv
+env/
+venv/
+*.log
+
+# OS Generated Files
+.DS_Store
+Thumbs.db

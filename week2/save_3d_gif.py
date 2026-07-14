@@ -1,5 +1,5 @@
 from matplotlib.animation import FuncAnimation
-from show_3d_matplotlib import fig, ax, X_sub, Y_sub, Z_sub, color_sub
+from week2.src.show_3d_matplotlib import fig, ax, X_sub, Y_sub, Z_sub, color_sub
 
 sc = ax.scatter(X_sub, Y_sub, Z_sub, c=color_sub, s=2)
 
