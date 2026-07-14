@@ -15,3 +15,8 @@ venv/
 # OS Generated Files
 .DS_Store
 Thumbs.db
+
+# Presentation and Reports (Keep local, do not upload to Git)
+*presentation*.md
+
+
