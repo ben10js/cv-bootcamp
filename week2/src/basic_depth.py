@@ -10,7 +10,7 @@ def generate_depth_map(image):
     # 그레이스케일 변환
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     # 깊이 맵 생성 (가상의 깊이 적용)
-    depth_map = cv2.applyColorMap(gray, cv2.COLORMAP_JET)
+    depth_map = cv2.applyColorMap(gray,  cv2.COLORMAP_JET)
     return depth_map, gray
 
 # import 될 때는 안 돌고, 이 파일을 직접 python basic_depth.py 로 실행할 때만 돌게 만든다. 
@@ -18,6 +18,6 @@ if __name__ == '__main__':
     from config.config import IMAGE
     if IMAGE is not None:
         depth_map, _ = generate_depth_map(IMAGE)
-    cv2.imshow('Depth Map', depth_map)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+        cv2.imshow('Depth Map', depth_map)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
